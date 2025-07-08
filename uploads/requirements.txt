@@ -1,6 +1,8 @@
-streamlit
+flask
+gunicorn
 scikit-learn
 fuzzywuzzy
+python-Levenshtein
 distance
-bs4
-gunicorn
+beautifulsoup4
+lxml
