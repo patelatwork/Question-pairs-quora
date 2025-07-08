@@ -14,3 +14,4 @@ jupyter
 matplotlib
 seaborn
 nltk
+xgboost
