@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quora Question Pair Resolution</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="../static/script.js"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-content">
+            <span class="logo">Quora</span>
+            <span class="spacer"></span>
+            <button onclick="toggleMode()" class="mode-toggle" aria-label="Toggle light/dark mode">🌓</button>
+        </div>
+    </nav>
+    <div class="container">
+        <form method="post">
+            <label for="question1">Question 1</label>
+            <textarea id="question1" name="question1" placeholder="Enter first question..."></textarea>
+            <label for="question2">Question 2</label>
+            <textarea id="question2" name="question2" placeholder="Enter second question..."></textarea>
+            <button type="submit">Are these same?</button>
+            {% if result %}
+                <div class="result">{{ result }}</div>
+            {% endif %}
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,215 @@
+body {
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    background: #f6f7fb;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 500px;
+    margin: 60px auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    padding: 32px 24px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+label {
+    font-weight: bold;
+    color: #2d2d2d;
+    margin-bottom: 6px;
+    display: block;
+    font-size: 1.1em;
+}
+textarea {
+    width: 100%;
+    min-height: 110px;
+    resize: vertical;
+    font-size: 1.1em;
+    padding: 12px;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+    margin-bottom: 0;
+    background: #f9f9f9;
+    transition: border 0.2s;
+    box-sizing: border-box;
+}
+textarea:focus {
+    border: 1.5px solid #b92b27;
+    outline: none;
+    background: #fff;
+}
+button {
+    width: 100%;
+    background: #b92b27;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 14px 0;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+button:hover {
+    background: #a61d24;
+}
+.navbar {
+    background: #fff;
+    border-bottom: 1px solid #e2e2e2;
+    padding: 0 0;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.navbar-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    height: 56px;
+    padding: 0 24px;
+}
+.logo {
+    font-family: 'Georgia', serif;
+    font-size: 2em;
+    color: #b92b27;
+    font-weight: bold;
+    margin-right: 32px;
+}
+.search {
+    flex: 1;
+    padding: 8px 14px;
+    border: 1px solid #e2e2e2;
+    border-radius: 4px;
+    font-size: 1em;
+    margin-right: 32px;
+    background: #f6f7fb;
+}
+.nav-links {
+    display: flex;
+    gap: 18px;
+    margin-right: 32px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #636466;
+    font-weight: 500;
+    font-size: 1em;
+    padding: 6px 10px;
+    border-radius: 3px;
+    transition: background 0.2s, color 0.2s;
+}
+.nav-links a:hover {
+    background: #f6f7fb;
+    color: #b92b27;
+}
+.login-btn {
+    background: #b92b27;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 18px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.login-btn:hover {
+    background: #a61d24;
+}
+body.dark-mode {
+    background: #18191a;
+    color: #e4e6eb;
+}
+body.dark-mode .container {
+    background: #242526;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+body.dark-mode label {
+    color: #e4e6eb;
+}
+body.dark-mode textarea {
+    background: #18191a;
+    color: #e4e6eb;
+    border: 1px solid #3a3b3c;
+}
+body.dark-mode textarea:focus {
+    border: 1.5px solid #b92b27;
+    background: #242526;
+}
+body.dark-mode button,
+body.dark-mode .mode-toggle {
+    background: #b92b27;
+    color: #fff;
+}
+body.dark-mode button:hover,
+body.dark-mode .mode-toggle:hover {
+    background: #a61d24;
+}
+body.dark-mode .navbar {
+    background: #242526;
+    border-bottom: 1px solid #3a3b3c;
+}
+body.dark-mode .logo {
+    color: #ffdad6;
+}
+.spacer {
+    flex: 1;
+}
+.mode-toggle {
+    background: #f6f7fb;
+    color: #b92b27;
+    border: none;
+    border-radius: 50%;
+    font-size: 1.3em;
+    margin-left: auto;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background 0.2s, box-shadow 0.2s;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+}
+.mode-toggle:hover {
+    background: #ececec;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+.result {
+    margin: 18px 0 0 0;
+    padding: 12px;
+    border-radius: 5px;
+    background: #f6f7fb;
+    color: #b92b27;
+    font-weight: bold;
+    text-align: center;
+}
+body.dark-mode .result {
+    background: #242526;
+    color: #ffdad6;
+}
+@media (max-width: 600px) {
+    .container {
+        max-width: 98vw;
+        padding: 12px 2vw;
+    }
+    .navbar-content {
+        padding: 0 8px;
+    }
+    .logo {
+        font-size: 1.3em;
+    }
+    .mode-toggle {
+        font-size: 1em;
+        padding: 4px 8px;
+        width: 32px;
+        height: 32px;
+    }
+}
