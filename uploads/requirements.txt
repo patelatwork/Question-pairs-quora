@@ -6,3 +6,11 @@ python-Levenshtein
 distance
 beautifulsoup4
 lxml
+pandas
+numpy
+joblib
+notebook
+jupyter
+matplotlib
+seaborn
+nltk
